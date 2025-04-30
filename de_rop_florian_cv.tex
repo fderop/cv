@@ -1,0 +1,152 @@
+\documentclass{tccv}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{hologo}
+\usepackage{fontawesome}
+\usepackage{amssymb}
+\DeclareUnicodeCharacter{1D54F}{$\mathbb{X}$}
+
+% Define environments with consistent spacing
+\newenvironment{spacedlist}{%
+    \renewcommand\item[2]{%
+        \textbf{##1} & {\raggedright ##2\\}\\[0.8ex]}
+    \tabularx{\linewidth}{rX}}
+    {\endtabularx}
+
+\begin{document}
+
+\part{Florian De Rop}
+\personal
+{SF Bay Area, CA}
+{fderop.io}
+{florian.van.de.rop@gmail.com}
+{github.com/fderop}
+{x.com/fvderop}
+\section{Experience}
+\begin{eventlist}
+      \item{Technical Staff}
+            {Retro Biosciences\hfill Oct. 2023 -- Present}
+            {Organoid culture automation, bioreactors, single-cell sequencing, bioinformatics}
+
+      \item{PhD Researcher}
+            {KU Leuven\hfill Oct. 2019 -- Sep. 2023}
+            {Design, development and benchmarking of single-cell sequencing assays}
+
+      \item{Master Thesis Tutor}
+            {KU Leuven\hfill Sep. 2017 -- 2020}
+            {}
+
+%     \item{}
+%           {KU Leuven\hfill 2017 -- 2018}
+%           {Speech to Text Interpreter}
+
+%     Assisting a person with hearing aids with attending class.
+
+      \item{Production Assistant}
+            {IDT\hfill Sep. 2017, Jul. 2018}
+            {Manufacturing oligonucleotides}
+
+%     \item{}
+%           {SGS Life Sciences\hfill August 2015, July 2016}
+%           {Technical Writing Assistant}
+
+%     Technical writing of case studies, clinical trial descriptions and management of SGS Life Sciences' clinical track record.
+
+      \item{Research Intern}
+            {KU Leuven Stem Cell Institute\hfill Sep. 2015}
+            {HuH-7 gene expression response to various osmolytes}
+
+\end{eventlist}
+
+\section{Education}
+\begin{eventlist}
+%     \item[VIB/KU Leuven Stein Aerts Lab]{2019 -- 2023}
+%           {PhD. Biomedical Sciences}
+%           {"Design, Development and Benchmarking of Single-cell ATAC-seq technologies"}
+      \item{MSc. Bioscience Engineering}
+            {KU Leuven -- Magna cum laude\hfill 2017 -- 2019}
+            {Optimisation of inDrop single-cell RNA-seq and development of a single-cell ATAC-seq protocol}
+
+      \item{KU Leuven Honours Programme}
+            {Institute for the Future\hfill 2018 -- 2019}
+            {Vaccination dynamics}
+
+      \item{BSc. Biomedical Sciences}
+            {KU Leuven\hfill 2013 -- 2016}
+            {}
+    % {A nonsynonymous mutation in carboxypeptidase E reduces enzymatic activity and impairs routing to the secretory pathway in an obese patient exhibiting hyperproinsulinemia and hypogenitalism}
+\end{eventlist}
+\newpage
+\section{Publications}
+\begin{yearlist}
+    \item{2023}
+          {Benchmarking of single-cell ATAC sequencing tools}
+          {\href{https://www.nature.com/articles/s41587-023-01897-3}{De Rop \& Heyn, Nature Biotechnology}}
+    \item{2023}
+          {Systematic benchmarking of single-cell ATAC-sequencing protocols}
+          {\href{https://www.nature.com/articles/s41587-023-01881-x}{De Rop et al., Nature Biotechnology}}
+    \item{2022}
+          {Decoding gene regulation in the fly brain}
+          {\href{https://www.nature.com/articles/s41586-021-04262-z}{Janssens et al., Nature}}
+    \item{2021}
+          {HyDrop: droplet-based scATAC-seq and scRNA-seq using dissolvable hydrogel beads}
+          {\href{https://doi.org/10.7554/eLife.73971}{De Rop et al., eLife}}
+    \item{2018}
+          {Creasensor: SIMPLE technology for creatinine detection in plasma.}
+          {\href{https://doi.org/10.1016/j.aca.2017.11.026}{Dal Dosso et al., Analytica Chimica Acta}}
+\end{yearlist}
+
+\section{As a speaker}
+\begin{compactyearlist}
+      \item{2023}{Revolutionising Next Generation Sequencing}
+      \item{2023}{AGBT}
+      \item{2022}{Inauguration of the Leuven Institute for Single-Cell Omics}
+      \item{2022}{Single Cell Genomics Utrecht}
+      \item{2021}{CRG visiting researcher}
+      \item{2021}{EPFL visiting researcher}
+      \item{2021}{MJFF ASAP COSA}
+      \item{2021}{LifeTime conference}
+\end{compactyearlist}
+
+\section{Awards}
+\begin{yearlist}
+    \item{2021}
+          {Aligning Science Across Parkinson's}
+          {\href{https://parkinsonsroadmap.org/open-science-champions/}{Open Science Champion}}
+    \item{2020}
+          {VIB Tech Watch}
+          {Technology Development Grants I, II, III}
+    \item{2019}
+          {Research Foundation Flanders}
+          {Strategic Research Grant}
+    \item{2018}
+          {SensUs Biosensor Competition}
+          {\href{https://www.sensus.org/archive/2018}{1st Prize in Translation Potential}}
+    \item{2016}
+          {SensUs Biosensor Competition}
+          {\href{https://www.sensus.org/archive/2016}{1st Prize in Analytical Performance\newline1st Prize in Translation Potential\newline1st Prize in Public Inspiration}}
+\end{yearlist}
+
+\newpage
+\section{Software \& Lab Protocols}
+\begin{spacedlist}
+    \item{PUMATAC}
+            {\href{https://github.com/aertslab/PUMATAC_tutorial}{NextFlow pipeline for universal alignment of scATAC-seq data}}
+    \item{scforest}
+            {\href{https://github.com/aertslab/scforest/tree/master}{Overview of scTech}}
+    \item{HyDrop-ATAC}
+            {\href{https://www.protocols.io/view/hydrop-atac-v1-0-yxmvmkm2ng3p/v3}{Droplet-based scATAC-seq}}
+    \item{HyDrop-RNA}
+            {\href{https://www.protocols.io/view/hydrop-rna-v1-0-dm6gpwqjjlzp/v2}{Droplet-based scRNA-seq}}
+    \item{HyDrop Beads}
+            {\href{https://www.protocols.io/view/hydrop-bead-generation-amp-pcr-barcoding-v1-0-n92ld9np9g5b/v11}{Dissolvable polyacrylamide hydrogel bead synthesis and barcoding}}
+\end{spacedlist}
+
+\section{Languages}
+\begin{spacedlist}
+    \item{English}{CEFR C2 Professional}
+    \item{Dutch}{Native}
+    \item{French}{Basic}
+\end{spacedlist}
+
+\end{document}
