@@ -32,7 +32,7 @@
 
 \setcounter{secnumdepth}{-1}
 \RequirePackage[hmargin=1.25cm,vmargin=1.25cm,twocolumn,columnsep=1.25cm]{geometry}
-\RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,fontawesome}
+\RequirePackage{academicons,bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,fontawesome}
 
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
@@ -103,10 +103,10 @@
 % Renders a personal data box:
 %
 % |[
-% \personal[optional: web site without scheme (no http:// prefix)]
-%          {address}{phone number}{email}
+% \personal{address}{web site without scheme}{email}{GitHub}{X}
+%          {Google Scholar URL}
 % ]|
-\newcommand\personal[5]{%
+\newcommand\personal[6]{%
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
     \boxwidth=\dimexpr\linewidth-2\fboxsep\relax%
@@ -115,6 +115,7 @@
     \Writinghand & {#1}\\
     \faGlobe      & \href{https://#2}{#2}\\
     \Letter      & \href{mailto:#3}{#3}\\
+    \aiGoogleScholar & \href{#6}{Google Scholar}\\
     \faGithub      & \href{https://#4}{#4}\\
     𝕏   & \href{https://#5}{#5}\\
     \end{tabularx}}}
@@ -123,16 +124,16 @@
 % of description:
 %
 % |[
-% \item{date range}{company}{role}
+% \item{role}{company}{date range}{description}
 %
 % Description of what achieved during this application.
 % ]|
 \newenvironment{eventlist}{%
-    \renewcommand\item[3]{%
-    {\fontseries{m}\large##1\\}%
+    \renewcommand\item[4]{%
+    {\fontseries{m}\fontsize{11}{13.2}\selectfont##1\hfill##3\\}%
     {\vspace{2pt}}%
     {##2\\}%
-    {\textit{##3}\\}%
+    {\textit{##4}\\}%
     }}
     {\medskip}
 
