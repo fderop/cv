@@ -1,0 +1,257 @@
+\documentclass[10pt]{scrartcl}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=0.82in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{xcolor}
+\usepackage{xurl}
+\usepackage{hyperref}
+
+\definecolor{accent}{HTML}{801010}
+\definecolor{link}{HTML}{1C1E8A}
+
+\hypersetup{
+    colorlinks=true,
+    breaklinks=true,
+    urlcolor=link,
+    linkcolor=link,
+    pdfauthor={Florian De Rop},
+    pdftitle={Florian De Rop -- Exhaustive Curriculum Vitae}
+}
+
+\setcounter{secnumdepth}{-1}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\setlength{\emergencystretch}{2em}
+\setlist[itemize]{leftmargin=1.3em,itemsep=0.25em,topsep=0.35em}
+\setkomafont{section}{\large\bfseries\color{accent}}
+\RedeclareSectionCommand[beforeskip=1.2em,afterskip=0.45em]{section}
+
+\newcommand{\cventry}[4]{%
+    \needspace{5\baselineskip}%
+    {\large\textbf{#1}}\hfill\textbf{#3}\par
+    \textit{#2}\par
+    \smallskip
+    #4\par
+    \medskip
+}
+
+\newcommand{\cvpublication}[1]{%
+    \par\noindent\hangindent=1.5em\hangafter=1 #1\par\smallskip
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge\bfseries Florian De Rop}\par
+    \vspace{0.65em}
+    SF Bay Area, California
+    \enspace\textbullet\enspace
+    \href{mailto:florian.van.de.rop@gmail.com}{florian.van.de.rop@gmail.com}
+    \enspace\textbullet\enspace
+    \href{https://fderop.dev}{fderop.dev}\par
+    \href{https://github.com/fderop}{github.com/fderop}
+    \enspace\textbullet\enspace
+    \href{https://orcid.org/0000-0001-5241-924X}{ORCID 0000-0001-5241-924X}
+    \enspace\textbullet\enspace
+    \href{https://scholar.google.com/citations?user=Of7Z4ykAAAAJ&hl=en}{Google Scholar}
+    \enspace\textbullet\enspace
+    \href{https://x.com/fvderop}{x.com/fvderop}
+\end{center}
+
+\section{Scientific Interests}
+
+My career began designing and building microfluidic biosensors at the MeBioS group of prof. Jeroen Lammertyn, where I helped our university reach two victories in the Sensus Biosensor Competition. I transferred these skills over to single-cell sequencing assay development at the lab of prof. Stein Aerts. This work yielded two major works: (1) the development of HyDrop, the first open-source hydrogel-based droplet scATAC-seq protocol, which was also frontier in sensitivity on release; and (2) a large-scale technical benchmark of scATAC-seq methods. My work here combined wet lab, hardware engineering, automation, and development of new bioinformatics workflows and algorithms for the analysis of resulting data, and was published in eLife and Nature Biotechnology. Shortly after, I joined Retro Biosciences, where I implemented these methods in a pre-clinical context. Later on, I also became closely involved in the automation of cell therapy production at Retro Biosciences - both using liquid handlers for screening purposes, as well as larger perfusion vessels for production batches. After Retro, I co-founded Glass Biosciences, which builds software for scientists. Our products help scientists manage large volumes of data and build internal statistical models.
+
+\section{Technical Expertise}
+
+\begin{itemize}
+    \item \textbf{Experimental biology:} single-cell RNA sequencing, single-cell ATAC sequencing, droplet microfluidics, hydrogel-bead barcoding, assay sensitivity optimization, organoid culture, and bioreactors.
+    \item \textbf{Automation and engineering:} liquid handlers and peripheral read-out devices, hardware/firmware/software interactions, custom circuitry and hardware, assay transfer, fluidics, imaging.
+    \item \textbf{Software and computation:} Nextflow, Python, AWS/Google Cloud, frontend development, relational databases, ....
+\end{itemize}
+
+\section{Professional Experience}
+
+\cventry
+    {Co-founder and Chief Technology Officer}
+    {Glass Bio, San Francisco Bay Area, California}
+    {2026 -- Present}
+    {Lead Glass Bio's technical direction. We build data-management and analysis software for pre-clinical teams. Focus on large omics datasets, including automated cell type annotation and cross-database search/relationships.}
+
+\cventry
+    {Technical Staff}
+    {Retro Biosciences, Redwood City, California}
+    {2023 -- 2026}
+    {Built systems for organoid-culture automation, bioreactors, single-cell sequencing, and bioinformatics. Integrated laboratory hardware, experimental workflows, and analysis pipelines to scale biological data generation.}
+
+\cventry
+    {PhD Researcher}
+    {VIB--KU Leuven Laboratory of Computational Biology, Leuven, Belgium}
+    {2019 -- 2023}
+    {Developed new droplet-microfluidic single-cell sequencing methods the lab of prof. Stein Aerts. Led HyDrop development and a benchmark of eight scATAC-seq protocols, across 11 research centers. Released open protocols, analysis software, and datasets that support reproducible single-cell research. Supported researchers generating data for large ML projects. My work spanned the entire single-cell stack: from hardware engineering, to chemical optimization of reactions, to microfluidics, organoid cell cultures as a model system, and finally full stack analysis from raw bcl to finished analysis. Published in eLife, Nature, Nature Biotechnologies.}
+
+\cventry
+    {Master Thesis Tutor}
+    {KU Leuven, Leuven, Belgium}
+    {2017 -- 2020}
+    {Tutored foreign Master students with language barriers, and supported their academic progress through individual guidance.}
+
+\cventry
+    {Speech-to-Text Interpreter}
+    {KU Leuven, Leuven, Belgium}
+    {2017 -- 2018}
+    {Provided live speech-to-text interpretation during lectures for a student with hearing loss.}
+
+\cventry
+    {Production Assistant}
+    {Integrated DNA Technologies, Leuven, Belgium}
+    {September 2017 and July 2018}
+    {Supported oligonucleotide manufacturing in the main production operation at Integrated DNA Technologies.}
+
+\cventry
+    {Technical Writing Assistant}
+    {SGS Life Sciences, Mechelen, Belgium}
+    {August 2015 and July 2016}
+    {Wrote case studies and clinical-trial descriptions for proposal development. Maintained the clinical track record of SGS Life Sciences.}
+
+\cventry
+    {Research Intern}
+    {KU Leuven Stem Cell Institute, Leuven, Belgium}
+    {September 2015}
+    {Completed a student research placement at the KU Leuven Stem Cell Institute, the topic was effect of trehalose on cryopreservation of stem cell cultures.}
+
+\section{Education}
+
+\cventry
+    {PhD in Biomedical Sciences}
+    {VIB--KU Leuven, Faculty of Medicine, Leuven, Belgium}
+    {2019 -- 2023}
+    {Doctoral Training in Biomedical Sciences in the Laboratory of Computational Biology. Project: \emph{Design, development and assessment of single-cell chromatin accessibility sequencing assays}. Supervisor: Prof. Stein Aerts. Co-supervisor: Dr. Suresh Poovathingal.}
+
+\cventry
+    {MSc in Bioscience Engineering}
+    {KU Leuven, Faculty of Bioscience Engineering, Leuven, Belgium}
+    {2017 -- 2019}
+    {Program: Biosystems and Bionanotechnology. Graduated \emph{magna cum laude}. Completed master's thesis research in the Stein Aerts laboratory.}
+
+\cventry
+    {Honours Programme}
+    {KU Leuven Institute for the Future, Leuven, Belgium}
+    {2018 -- 2019}
+    {Completed an interdisciplinary research challenge on vaccine coverage. This work produced a peer-reviewed systems-map publication with seven collaborators.}
+
+\cventry
+    {BSc in Biomedical Sciences}
+    {KU Leuven, Faculty of Medicine, Leuven, Belgium}
+    {2013 -- 2016}
+    {Bachelor's thesis: \emph{A nonsynonymous mutation in carboxypeptidase E reduces enzymatic activity and impairs routing to the secretory pathway in an obese patient exhibiting hyperproinsulinemia and hypogenitalism}.}
+
+\section{Journal Publications -- Complete List}
+
+{\small
+
+\cvpublication{Dickm\"anken, H., Wojno, M., Mahieu, L., Theunis, K., Ek\c{s}i, E. C., Christiaens, V., Kempynck, N., \textbf{De Rop, F. V.}, Roels, N., Spanier, K. I., Vandepoel, R., Hulselmans, G., Poovathingal, S., \& Aerts, S. (2026). Evaluating single-cell ATAC-seq atlasing technologies using sequence-to-function modeling. \emph{Nature Communications}, \emph{17}, 1951. \href{https://doi.org/10.1038/s41467-026-68742-4}{https://doi.org/10.1038/s41467-026-68742-4}}
+
+\cvpublication{\textbf{De Rop, F. V.}, Hulselmans, G., Flerin, C., Soler-Vila, P., Rafels, A., Christiaens, V., Gonz\'alez-Blas, C. B., Marchese, D., Carat\`u, G., Poovathingal, S., Rozenblatt-Rosen, O., Slyper, M., Luo, W., Muus, C., Duarte, F., Shrestha, R., Bagdatli, S. T., Corces, M. R., Mamanova, L., Knights, A., Meyer, K. B., Mulqueen, R., Taherinasab, A., Maschmeyer, P., Pezoldt, J., Lambert, C. L. G., Iglesias, M., Najle, S. R., Dossani, Z. Y., Martelotto, L. G., Burkett, Z., Lebofsky, R., Martin-Subero, J. I., Pillai, S., Seb\'e-Pedr\'os, A., Deplancke, B., Teichmann, S. A., Ludwig, L. S., Braun, T. P., Adey, A. C., Greenleaf, W. J., Buenrostro, J. D., Regev, A., Aerts, S., \& Heyn, H. (2024). Systematic benchmarking of single-cell ATAC-sequencing protocols. \emph{Nature Biotechnology}, \emph{42}, 916--926. \href{https://doi.org/10.1038/s41587-023-01881-x}{https://doi.org/10.1038/s41587-023-01881-x}}
+
+\cvpublication{\textbf{De Rop, F. V.}, \& Heyn, H. (2024). Benchmarking of single-cell ATAC sequencing tools. \emph{Nature Biotechnology}, \emph{42}, 856--857. \href{https://doi.org/10.1038/s41587-023-01897-3}{https://doi.org/10.1038/s41587-023-01897-3}}
+
+\cvpublication{\textbf{De Rop, F. V.}, Ismail, J. N., Gonz\'alez-Blas, C. B., Hulselmans, G. J., Flerin, C. C., Janssens, J., Theunis, K., Christiaens, V. M., Wouters, J., Marcassa, G., de Wit, J., Poovathingal, S., \& Aerts, S. (2022). Hydrop enables droplet-based single-cell ATAC-seq and single-cell RNA-seq using dissolvable hydrogel beads. \emph{eLife}, \emph{11}, e73971. \href{https://doi.org/10.7554/eLife.73971}{https://doi.org/10.7554/eLife.73971}}
+
+\cvpublication{Janssens, J., Aibar, S., Taskiran, I. I., Ismail, J. N., Estacio Gomez, A., Aughey, G., Spanier, K. I., \textbf{De Rop, F. V.}, Gonz\'alez-Blas, C. B., Dionne, M., Grimes, K., Quan, X. J., Papasokrati, D., Hulselmans, G., Makhzami, S., De Waegeneer, M., Christiaens, V., Southall, T., \& Aerts, S. (2022). Decoding gene regulation in the fly brain. \emph{Nature}, \emph{601}(7894), 630--636. \href{https://doi.org/10.1038/s41586-021-04262-z}{https://doi.org/10.1038/s41586-021-04262-z}}
+
+\cvpublication{Clark, E. C., \textbf{De Rop, F.}, Jimenez Garcia, I. A., Nogal Macho, A., Mannette, R. A., Nova Blanco, J. R., Ramaekers, K., \& Vandermeulen, C. (2019). A systems map to elucidate the factors influencing vaccine coverage. \emph{Transdisciplinary Insights}, \emph{3}(1), 115--150. \href{https://doi.org/10.11116/TDI2019.3.5}{https://doi.org/10.11116/TDI2019.3.5}}
+
+\cvpublication{Dal Dosso, F., Decrop, D., P\'erez-Ruiz, E., Daems, D., Agten, H., Al-Ghezi, O., Bollen, O., Breukers, J., \textbf{De Rop, F.}, Katsafadou, M., Lepoudre, J., Lyu, L., Piron, P., Saesen, R., Sels, S., Soenen, R., Staljanssens, E., Taraporewalla, J., Kokalj, T., Spasic, D., \& Lammertyn, J. (2018). Creasensor: SIMPLE technology for creatinine detection in plasma. \emph{Analytica Chimica Acta}, \emph{1000}, 191--198. \href{https://doi.org/10.1016/j.aca.2017.11.026}{https://doi.org/10.1016/j.aca.2017.11.026}}
+
+}
+
+\section{Software and Open Research Resources}
+
+{\raggedright
+\begin{itemize}
+    \item \textbf{PUMATAC.} Nextflow pipeline for universal alignment and preprocessing of scATAC-seq data. \href{https://github.com/aertslab/PUMATAC\_tutorial}{github.com/aertslab/PUMATAC\_tutorial}
+    \item \textbf{HyDrop data analysis.} Reproducible tutorials and scripts for the HyDrop datasets and publication figures. \href{https://github.com/aertslab/hydrop\_data\_analysis}{github.com/aertslab/hydrop\_data\_analysis}
+    \item \textbf{scforest.} Open overview of single-cell technologies and related resources. \href{https://github.com/aertslab/scforest}{github.com/aertslab/scforest}
+\end{itemize}
+}
+
+\section{Published Laboratory Protocols}
+
+{\small
+
+\cvpublication{Poovathingal, S., Wojno, M., Theunis, K., \textbf{De Rop, F.}, \& Aerts, S. (2025). \emph{HyDrop v2 Bead Generation \& Ligation Barcoding v2}. protocols.io. \url{https://doi.org/10.17504/protocols.io.8epv5n11dv1b/v2}}
+
+\cvpublication{Poovathingal, S., \textbf{De Rop, F.}, Christiaens, V., Theunis, K., \& Aerts, S. (2025). \emph{HyDrop-v2-ATAC v1}. protocols.io. \url{https://doi.org/10.17504/protocols.io.x54v97mmpg3e/v1}}
+
+\cvpublication{\textbf{De Rop, F.}, Aerts, S., \& Poovathingal, S. (2023). \emph{Microfluidic Chip Production v1.1}. protocols.io. \url{https://doi.org/10.17504/protocols.io.6qpvrdq7pgmk/v4}}
+
+\cvpublication{\textbf{De Rop, F.}, Poovathingal, S., \& Aerts, S. (2023). \emph{HyDrop-RNA v1.0}. protocols.io. \url{https://doi.org/10.17504/protocols.io.dm6gpwqjjlzp/v5}}
+
+\cvpublication{\textbf{De Rop, F.}, Poovathingal, S., \& Aerts, S. (2022). \emph{HyDrop-ATAC v1.0}. protocols.io. \url{https://doi.org/10.17504/protocols.io.b4xvqxn6}}
+
+\cvpublication{\textbf{De Rop, F.}, Poovathingal, S., \& Aerts, S. (2022). \emph{HyDrop Bead Generation \& PCR Barcoding v1.0}. protocols.io. \href{https://www.protocols.io/view/hydrop-bead-generation-amp-pcr-barcoding-v1-0-n92ld9np9g5b/v11}{protocols.io/n92ld9np9g5b/v11}}
+
+}
+
+\section{Talks and Scientific Presentations}
+
+\begin{itemize}
+    \item \textbf{2023} -- Speaker, VIB Conference \emph{Revolutionizing Next-Generation Sequencing}, fifth edition, Ghent, Belgium.
+    \item \textbf{2023} -- Speaker, Advances in Genome Biology and Technology General Meeting, Hollywood, Florida, United States.
+    \item \textbf{2022} -- Speaker, KU Leuven Institute for Single Cell Omics Kickoff Day, Leuven, Belgium.
+    \item \textbf{2022} -- Speaker, Single Cell Genomics, Utrecht, the Netherlands.
+    \item \textbf{2021} -- Visiting researcher and seminar speaker, Centre for Genomic Regulation, Barcelona, Spain.
+    \item \textbf{2021} -- Visiting researcher and seminar speaker, \`Ecole Polytechnique F\'ed\'erale de Lausanne, Lausanne, Switzerland.
+    \item \textbf{2021} -- Presenter, Aligning Science Across Parkinson's Celebration of Scientific Achievement, virtual meeting.
+    \item \textbf{2021} -- Short talk, LifeTime Conference 2.0: \emph{HyDrop: a custom droplet microfluidics assay for single-cell ATAC-seq and single-cell RNA-seq}.
+\end{itemize}
+
+\needspace{8\baselineskip}
+\section{Awards, Fellowships, and Grants}
+
+\cventry
+    {Open Science Champion}
+    {Aligning Science Across Parkinson's}
+    {2021}
+    {Recognized for a strong commitment to open science through public protocols, software, analysis resources, and research data.}
+
+\cventry
+    {Technology Development Grants I, II, and III}
+    {VIB Tech Watch}
+    {2020}
+    {Received three technology-development support grants for the HyDrop single-cell platform.}
+
+\cventry
+    {PhD Fellowship in Strategic Basic Research}
+    {Research Foundation -- Flanders (FWO)}
+    {2019}
+    {Awarded a 4-year FWO fellowship for doctoral research in the VIB--KU Leuven Laboratory of Computational Biology. Grant references: 1S80920N and 1S80922N.}
+
+\cventry
+    {First Prize in Translation Potential}
+    {SensUs International Student Competition}
+    {2018}
+    {Helped build a vancomycin biosensor, which won translation potential prize.}
+
+\cventry
+    {First Prizes in Translation Potential, Analytical Performance}
+    {SensUs International Student Competition}
+    {2016}
+    {Helped build a biosensor for creatinine, a kidney function biomarker, which swept the competition and was later published in Analytica Chimica Acta.}
+
+\section{Languages}
+
+\begin{itemize}
+    \item \textbf{Dutch:} native.
+    \item \textbf{English:} CEFR C2, professional proficiency.
+    \item \textbf{French:} basic proficiency.
+\end{itemize}
+
+\end{document}
